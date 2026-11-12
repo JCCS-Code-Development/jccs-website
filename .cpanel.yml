@@ -8,8 +8,8 @@ deployment:
     # which api/quote.php reads directly (it is not copied into public_html).
     - export DEPLOYPATH=/home/vm3xrrup9tqw/public_html
     # Pages live in folders so URLs are /about/, /services/, ... (no .html).
-    - /bin/cp -f index.html $DEPLOYPATH/
-    - /bin/mkdir -p $DEPLOYPATH/about $DEPLOYPATH/services $DEPLOYPATH/projects $DEPLOYPATH/contact $DEPLOYPATH/css $DEPLOYPATH/js $DEPLOYPATH/imagenes $DEPLOYPATH/api
+    - /bin/cp -f index.html favicon.ico $DEPLOYPATH/
+    - /bin/mkdir -p $DEPLOYPATH/about $DEPLOYPATH/services $DEPLOYPATH/projects $DEPLOYPATH/contact $DEPLOYPATH/css $DEPLOYPATH/js $DEPLOYPATH/imagenes $DEPLOYPATH/icons $DEPLOYPATH/api
     - /bin/cp -f about/index.html $DEPLOYPATH/about/
     - /bin/cp -f services/index.html $DEPLOYPATH/services/
     - /bin/cp -f projects/index.html $DEPLOYPATH/projects/
@@ -17,4 +17,5 @@ deployment:
     - /bin/cp -Rf css/. $DEPLOYPATH/css/
     - /bin/cp -Rf js/. $DEPLOYPATH/js/
     - /bin/cp -Rf imagenes/. $DEPLOYPATH/imagenes/
+    - /bin/cp -Rf icons/. $DEPLOYPATH/icons/
     - /bin/cp -f api/quote.php api/.htaccess $DEPLOYPATH/api/
