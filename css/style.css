@@ -14,8 +14,10 @@
     --steel-light: #c4ced9;
     --line: #dde3ea;
     --surface: #eef2f6;      /* concrete gray section background */
-    --font-body: "Barlow", "Helvetica Neue", Arial, sans-serif;
-    --font-display: "Barlow Condensed", "Arial Narrow", Arial, sans-serif;
+    /* Matched to the logo's squared, extended lettering (Eurostile/Microgramma style) */
+    --font-body: "Saira", "Helvetica Neue", Arial, sans-serif;
+    --font-display: "Saira", "Helvetica Neue", Arial, sans-serif;
+    --font-label: "Michroma", "Saira", Arial, sans-serif;
 }
 
 * {
@@ -2674,3 +2676,41 @@ select:focus-visible { outline: 3px solid var(--accent-on-dark); outline-offset:
 
     .client-logo-item[aria-hidden="true"] { display: none; }
 }
+
+/* Logo-matched type */
+h1, h2, h3 {
+    font-family: var(--font-display);
+    font-stretch: 112%;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+h1 { font-weight: 800; }
+
+.hero h1 { font-size: clamp(2.3rem, 5vw, 4.2rem); line-height: 1.08; }
+.page-hero h1,
+.page-title-content h1 { font-size: clamp(2.2rem, 5vw, 3.8rem); }
+.trusted-clients h2 { font-size: clamp(1.8rem, 3.8vw, 3.3rem); letter-spacing: -0.5px; }
+
+.section-label,
+.eyebrow,
+.btn,
+.nav-menu a,
+.facility-panel dt {
+    font-family: var(--font-label);
+    font-weight: 400;
+    font-stretch: normal;
+}
+
+.section-label,
+.eyebrow,
+.facility-panel dt { font-size: 0.72rem; letter-spacing: 2.5px; }
+
+.btn,
+.nav-menu a { font-size: 0.78rem; letter-spacing: 1.5px; }
+
+.facility-panel dd { font-stretch: 112%; font-weight: 700; }
+
+body { font-stretch: 100%; }
+
+.facility-panel dd { font-size: clamp(1.1rem, 1.8vw, 1.4rem); }
