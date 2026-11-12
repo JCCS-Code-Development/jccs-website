@@ -2662,3 +2662,15 @@ select:focus-visible { outline: 3px solid var(--accent-on-dark); outline-offset:
 
     .top-bar-contact { justify-content: center; }
 }
+
+/* Logo carousel: hold still for visitors who turn off motion */
+@media (prefers-reduced-motion: reduce) {
+    .client-logo-track {
+        animation: none;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .client-logo-item[aria-hidden="true"] { display: none; }
+}
