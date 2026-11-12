@@ -18,3 +18,10 @@ as noreply@jccs-services.com through Microsoft Graph (same app registration as t
 - No street address or map; list the city and service area only.
 - Use only our own or licensed photos. Remove GPS data and avoid faces, room numbers, and addresses.
 - No sample or invented testimonials.
+
+## Page URLs and local preview
+
+Each page is a folder with its own `index.html`, so URLs have no `.html`:
+`/`, `/about/`, `/services/`, `/projects/`, `/contact/`. Links use root paths (`/css/...`),
+so preview through a local server instead of opening files directly:
+`php -S 127.0.0.1:8000` from the repo root, then open http://127.0.0.1:8000/.

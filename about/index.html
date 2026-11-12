@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;700&display=swap">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
 
@@ -24,25 +24,25 @@
     <header class="site-header">
         <div class="container nav-wrapper">
             <div class="brand-area" style="display: flex; align-items: center; gap: 18px;">
-                <a href="index.html" class="logo">
-                    <img src="imagenes/logo_jccs.jpg" alt="JCCS Services logo">
+                <a href="/" class="logo">
+                    <img src="/imagenes/logo_jccs.jpg" alt="JCCS Services logo">
                 </a>
 
                 <div class="language-switcher" aria-label="Language selector" style="display: flex; align-items: center; gap: 6px;">
                     <button type="button" class="language-btn active" data-lang="en" aria-label="Switch to English" style="border: 1px solid #2563a6; background: #2563a6; padding: 4px; cursor: pointer; border-radius: 4px; display: flex; align-items: center; justify-content: center;">
-                        <img src="imagenes/us_flag.png" alt="English" style="width: 26px; height: 18px; object-fit: cover; display: block; border-radius: 2px;">
+                        <img src="/imagenes/us_flag.png" alt="English" style="width: 26px; height: 18px; object-fit: cover; display: block; border-radius: 2px;">
                     </button>
                     <button type="button" class="language-btn" data-lang="es" aria-label="Cambiar a español" style="border: 1px solid #2563a6; background: #ffffff; padding: 4px; cursor: pointer; border-radius: 4px; display: flex; align-items: center; justify-content: center;">
-                        <img src="imagenes/spain_flag.png" alt="Español" style="width: 26px; height: 18px; object-fit: cover; display: block; border-radius: 2px;">
+                        <img src="/imagenes/spain_flag.png" alt="Español" style="width: 26px; height: 18px; object-fit: cover; display: block; border-radius: 2px;">
                     </button>
                 </div>
             </div>
 
             <nav class="nav-menu" id="nav-menu">
-                <a href="about.html" class="active" data-en="About" data-es="Nosotros">About</a>
-                <a href="services.html" data-en="Services" data-es="Servicios">Services</a>
-                <a href="projects.html" data-en="Projects" data-es="Proyectos">Projects</a>
-                <a href="contact.html" data-en="Contact" data-es="Contacto">Contact</a>
+                <a href="/about/" class="active" data-en="About" data-es="Nosotros">About</a>
+                <a href="/services/" data-en="Services" data-es="Servicios">Services</a>
+                <a href="/projects/" data-en="Projects" data-es="Proyectos">Projects</a>
+                <a href="/contact/" data-en="Contact" data-es="Contacto">Contact</a>
             </nav>
 
             <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation menu">
@@ -87,7 +87,7 @@
                         It requires planning, respect for daily operations, attention to safety, and a team that can work
                         cleanly, efficiently, and professionally around staff, visitors, patients, customers, and employees.
                     </p>
-                    <a href="contact.html" class="btn btn-primary" data-en="Start a Conversation" data-es="Iniciar una Conversación">Start a Conversation</a>
+                    <a href="/contact/" class="btn btn-primary" data-en="Start a Conversation" data-es="Iniciar una Conversación">Start a Conversation</a>
                 </div>
             </div>
         </section>
@@ -213,7 +213,7 @@
                 <div>
                     <p class="section-label" data-en="Work With JCCS" data-es="Trabaje con JCCS">Work With JCCS</p>
                     <h2 data-en="Need a contractor who understands active facilities?" data-es="¿Necesita un contratista que entienda instalaciones activas?">Need a contractor who understands active facilities?</h2>
-                    <a href="contact.html" class="btn btn-primary" data-en="Contact Us" data-es="Contáctenos">Contact Us</a>
+                    <a href="/contact/" class="btn btn-primary" data-en="Contact Us" data-es="Contáctenos">Contact Us</a>
                 </div>
             </div>
         </section>
@@ -256,6 +256,6 @@
         setLanguage(localStorage.getItem('jccs-language') || 'en');
     </script>
 
-    <script src="js/main.js"></script>
+    <script src="/js/main.js"></script>
 </body>
 </html>
