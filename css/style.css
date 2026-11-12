@@ -2622,3 +2622,43 @@ select:focus-visible { outline: 3px solid var(--accent-on-dark); outline-offset:
     .card-graphic { height: 130px; }
     .hero { padding-block: 80px 90px; }
 }
+
+/* Top bar phone + email */
+.top-bar-contact {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px 22px;
+}
+
+.top-bar-contact a {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.top-bar-contact a:hover { color: var(--accent-on-dark); }
+
+.top-bar-contact svg {
+    width: 15px;
+    height: 15px;
+    flex: none;
+    color: var(--accent-on-dark);
+}
+
+@media (max-width: 760px) {
+    .top-bar-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 6px;
+        text-align: center;
+    }
+
+    .top-bar-content > p { display: none; }
+
+    .top-bar-contact { justify-content: center; }
+}

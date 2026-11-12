@@ -14,7 +14,7 @@ as noreply@jccs-services.com through Microsoft Graph (same app registration as t
 ## Content rules
 
 - No client logos or client names without written permission.
-- No staff names, cell numbers, or personal emails; use the general inbox.
+- No staff names or personal emails. Public contact = main line (864) 907-9052 and estimates@jccs-services.com.
 - No street address or map; list the city and service area only.
 - Use only our own or licensed photos. Remove GPS data and avoid faces, room numbers, and addresses.
 - No sample or invented testimonials.
