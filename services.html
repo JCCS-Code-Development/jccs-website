@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore JCCS Services commercial construction, facility preservation, renovation, repair, and maintenance services for healthcare, commercial, and institutional facilities.">
+    <title>Services | JCCS Services</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;700&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-content">
+            <p data-en="Facility Preservation & Renovation Services" data-es="Servicios de Preservación y Renovación de Instalaciones">Facility Preservation & Renovation Services</p>
+        </div>
+    </div>
+
+    <!-- Header / Navigation -->
+    <header class="site-header">
+        <div class="container nav-wrapper">
+            <div class="brand-area" style="display: flex; align-items: center; gap: 18px;">
+                <a href="index.html" class="logo">
+                    <img src="imagenes/logo_jccs.jpg" alt="JCCS Services logo">
+                </a>
+
+                <div class="language-switcher" aria-label="Language selector" style="display: flex; align-items: center; gap: 6px;">
+                    <button type="button" class="language-btn active" data-lang="en" aria-label="Switch to English" style="border: 1px solid #2563a6; background: #2563a6; padding: 4px; cursor: pointer; border-radius: 4px; display: flex; align-items: center; justify-content: center;">
+                        <img src="imagenes/us_flag.png" alt="English" style="width: 26px; height: 18px; object-fit: cover; display: block; border-radius: 2px;">
+                    </button>
+                    <button type="button" class="language-btn" data-lang="es" aria-label="Cambiar a español" style="border: 1px solid #2563a6; background: #ffffff; padding: 4px; cursor: pointer; border-radius: 4px; display: flex; align-items: center; justify-content: center;">
+                        <img src="imagenes/spain_flag.png" alt="Español" style="width: 26px; height: 18px; object-fit: cover; display: block; border-radius: 2px;">
+                    </button>
+                </div>
+            </div>
+
+            <nav class="nav-menu" id="nav-menu">
+                <a href="about.html" data-en="About" data-es="Nosotros">About</a>
+                <a href="services.html" class="active" data-en="Services" data-es="Servicios">Services</a>
+                <a href="projects.html" data-en="Projects" data-es="Proyectos">Projects</a>
+                <a href="contact.html" data-en="Contact" data-es="Contacto">Contact</a>
+            </nav>
+
+            <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation menu">
+                ☰
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Services Page Title -->
+        <section class="page-title-section services-title-section">
+            <div class="container page-title-content">
+                <p class="section-label" data-en="Facility Services" data-es="Servicios para Instalaciones">Facility Services</p>
+                <h1 data-en="Our Services" data-es="Nuestros Servicios">Our Services</h1>
+            </div>
+        </section>
+
+        <!-- Services Grid -->
+        <section class="section services-page-section">
+            <div class="container">
+
+                <div class="services-square-grid">
+                    <button type="button" class="service-square" data-service="facility-preservation">
+                        <span data-en="Facility Preservation" data-es="Preservación de Instalaciones">Facility Preservation</span>
+                    </button>
+
+                    <button type="button" class="service-square" data-service="commercial-construction">
+                        <span data-en="Commercial Construction" data-es="Construcción Comercial">Commercial Construction</span>
+                    </button>
+
+                    <button type="button" class="service-square" data-service="repairs-maintenance">
+                        <span data-en="Repairs and Maintenance" data-es="Reparaciones y Mantenimiento">Repairs and Maintenance</span>
+                    </button>
+
+                    <button type="button" class="service-square" data-service="medical-facility-renovation">
+                        <span data-en="Medical Facility Renovation" data-es="Renovación de Instalaciones Médicas">Medical Facility Renovation</span>
+                    </button>
+
+                    <button type="button" class="service-square" data-service="interior-buildouts">
+                        <span data-en="Interior Buildouts" data-es="Adecuaciones Interiores">Interior Buildouts</span>
+                    </button>
+
+                    <button type="button" class="service-square" data-service="code-compliant-renovation">
+                        <span data-en="Code-Compliant Renovation" data-es="Renovación Bajo Código">Code-Compliant Renovation</span>
+                    </button>
+                </div>
+
+                <section class="service-popup" id="service-popup" aria-hidden="true">
+                    <div class="service-popup-card">
+                        <button type="button" class="service-popup-close" id="service-popup-close" aria-label="Close service description">×</button>
+                        <p class="section-label" id="service-popup-label">Service Overview</p>
+                        <h3 id="service-popup-title">Facility Preservation</h3>
+                        <p id="service-popup-text">
+                            Select a service to learn more about the type of work JCCS Services provides.
+                        </p>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <!-- Services CTA -->
+        <section class="cta-section services-fit-cta">
+            <div class="container cta-content" style="justify-content: center; text-align: center;">
+                <div>
+                    <p class="section-label" data-en="Need Help Choosing?" data-es="¿Necesita Ayuda para Elegir?">Need Help Choosing?</p>
+                    <h2 data-en="Find out which one is the best fit for you." data-es="Descubra cuál es la mejor opción para usted.">Find out which one is the best fit for you.</h2>
+                    <a href="contact.html#request-quote" class="btn btn-primary" data-en="Request a Quote" data-es="Solicitar Cotización">Request a Quote</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p data-en="© 2026 JCCS Services. All rights reserved." data-es="© 2026 JCCS Services. Todos los derechos reservados.">&copy; 2026 JCCS Services. All rights reserved.</p>
+            <p data-en="Preservation • Renovation • Construction" data-es="Preservación • Renovación • Construcción">Preservation • Renovation • Construction</p>
+        </div>
+    </footer>
+
+    <script>
+        const languageButtons = document.querySelectorAll('.language-btn');
+        const translatableElements = document.querySelectorAll('[data-en][data-es]');
+        const serviceButtons = document.querySelectorAll('.service-square');
+        const servicePopup = document.getElementById('service-popup');
+        const servicePopupClose = document.getElementById('service-popup-close');
+        const servicePopupLabel = document.getElementById('service-popup-label');
+        const servicePopupTitle = document.getElementById('service-popup-title');
+        const servicePopupText = document.getElementById('service-popup-text');
+        let currentLanguage = localStorage.getItem('jccs-language') || 'en';
+
+        const serviceDetails = {
+            'facility-preservation': {
+                title: { en: 'Facility Preservation', es: 'Preservación de Instalaciones' },
+                text: {
+                    en: 'Ongoing facility support focused on protecting building function, appearance, safety, and long-term usability. This includes improvement work, preservation planning, and coordinated maintenance for active environments.',
+                    es: 'Apoyo continuo enfocado en proteger la funcionalidad, apariencia, seguridad y uso a largo plazo de las instalaciones. Incluye mejoras, planeación de preservación y mantenimiento coordinado para entornos activos.'
+                },
+            },
+            'commercial-construction': {
+                title: { en: 'Commercial Construction', es: 'Construcción Comercial' },
+                text: {
+                    en: 'Construction and improvement support for business, healthcare, professional, and institutional environments, with attention to scheduling, site coordination, safety, and dependable execution.',
+                    es: 'Apoyo en construcción y mejoras para entornos empresariales, de salud, profesionales e institucionales, con atención a la programación, coordinación en sitio, seguridad y ejecución confiable.'
+                },
+            },
+            'repairs-maintenance': {
+                title: { en: 'Repairs and Maintenance', es: 'Reparaciones y Mantenimiento' },
+                text: {
+                    en: 'Reliable repair and maintenance work to keep facilities safe, functional, clean, and ready for daily operations, including responsive support for spaces that remain in use.',
+                    es: 'Trabajos confiables de reparación y mantenimiento para mantener las instalaciones seguras, funcionales, limpias y listas para operar diariamente, incluyendo apoyo ágil en espacios activos.'
+                },
+            },
+            'medical-facility-renovation': {
+                title: { en: 'Medical Facility Renovation', es: 'Renovación de Instalaciones Médicas' },
+                text: {
+                    en: 'Renovation support for active medical environments where cleanliness, access, safety, containment, and operational continuity are essential to protect staff, visitors, and patient-facing areas.',
+                    es: 'Apoyo en renovación para entornos médicos activos donde la limpieza, el acceso, la seguridad, la contención y la continuidad operativa son esenciales para proteger al personal, visitantes y áreas de atención.'
+                },
+            },
+            'interior-buildouts': {
+                title: { en: 'Interior Buildouts', es: 'Adecuaciones Interiores' },
+                text: {
+                    en: 'Interior improvements, modifications, and buildouts designed around client needs, facility use, workflow, finish quality, and project coordination inside active spaces.',
+                    es: 'Mejoras, modificaciones y adecuaciones interiores diseñadas alrededor de las necesidades del cliente, uso de la instalación, flujo de trabajo, calidad de acabados y coordinación del proyecto.'
+                },
+            },
+            'code-compliant-renovation': {
+                title: { en: 'Code-Compliant Renovation', es: 'Renovación Bajo Código' },
+                text: {
+                    en: 'Renovation work approached with awareness of health, safety, facility, and construction requirements for active commercial and healthcare-related environments.',
+                    es: 'Trabajos de renovación abordados con conciencia de requisitos de salud, seguridad, instalaciones y construcción para entornos comerciales activos y relacionados con la salud.'
+                },
+            }
+        };
+
+        function setLanguage(language) {
+            currentLanguage = language;
+            document.documentElement.lang = language;
+
+            translatableElements.forEach((element) => {
+                element.textContent = element.dataset[language];
+            });
+
+            languageButtons.forEach((button) => {
+                const isActive = button.dataset.lang === language;
+                button.classList.toggle('active', isActive);
+                button.style.background = isActive ? '#2563a6' : '#ffffff';
+            });
+
+            if (servicePopup && servicePopup.classList.contains('active')) {
+                const activeService = servicePopup.dataset.activeService;
+                if (activeService) {
+                    openServicePopup(activeService);
+                }
+            }
+
+            localStorage.setItem('jccs-language', language);
+        }
+
+        function openServicePopup(serviceKey) {
+            const detail = serviceDetails[serviceKey];
+            if (!detail || !servicePopup) return;
+
+            servicePopup.dataset.activeService = serviceKey;
+            servicePopupTitle.textContent = detail.title[currentLanguage];
+            servicePopupText.textContent = detail.text[currentLanguage];
+            servicePopupLabel.textContent = currentLanguage === 'es' ? 'Descripción del Servicio' : 'Service Overview';
+            servicePopup.classList.add('active');
+            servicePopup.setAttribute('aria-hidden', 'false');
+            servicePopup.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+
+        function closeServicePopup() {
+            if (!servicePopup) return;
+            servicePopup.classList.remove('active');
+            servicePopup.setAttribute('aria-hidden', 'true');
+        }
+
+        languageButtons.forEach((button) => {
+            button.addEventListener('click', () => setLanguage(button.dataset.lang));
+        });
+
+        serviceButtons.forEach((button) => {
+            button.addEventListener('click', () => openServicePopup(button.dataset.service));
+        });
+
+        if (servicePopupClose) {
+            servicePopupClose.addEventListener('click', closeServicePopup);
+        }
+
+        setLanguage(currentLanguage);
+    </script>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

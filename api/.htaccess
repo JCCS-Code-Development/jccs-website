@@ -1,0 +1,5 @@
+# Only the quote endpoint is reachable from the web.
+<FilesMatch "^(config|config\.sample)\.php$">
+    Require all denied
+</FilesMatch>
+Options -Indexes

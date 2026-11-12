@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact JCCS Services for facility preservation, renovation, commercial construction, repairs, and maintenance support in South Carolina.">
+    <title>Contact | JCCS Services</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;700&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-content">
+            <p data-en="Facility Preservation & Renovation Services" data-es="Servicios de Preservación y Renovación de Instalaciones">Facility Preservation & Renovation Services</p>
+        </div>
+    </div>
+
+    <!-- Header / Navigation -->
+    <header class="site-header">
+        <div class="container nav-wrapper">
+            <div class="brand-area" style="display: flex; align-items: center; gap: 18px;">
+                <a href="index.html" class="logo">
+                    <img src="imagenes/logo_jccs.jpg" alt="JCCS Services logo">
+                </a>
+
+                <div class="language-switcher" aria-label="Language selector" style="display: flex; align-items: center; gap: 6px;">
+                    <button type="button" class="language-btn active" data-lang="en" aria-label="Switch to English" style="border: 1px solid #2563a6; background: #2563a6; padding: 4px; cursor: pointer; border-radius: 4px; display: flex; align-items: center; justify-content: center;">
+                        <img src="imagenes/us_flag.png" alt="English" style="width: 26px; height: 18px; object-fit: cover; display: block; border-radius: 2px;">
+                    </button>
+                    <button type="button" class="language-btn" data-lang="es" aria-label="Cambiar a español" style="border: 1px solid #2563a6; background: #ffffff; padding: 4px; cursor: pointer; border-radius: 4px; display: flex; align-items: center; justify-content: center;">
+                        <img src="imagenes/spain_flag.png" alt="Español" style="width: 26px; height: 18px; object-fit: cover; display: block; border-radius: 2px;">
+                    </button>
+                </div>
+            </div>
+
+            <nav class="nav-menu" id="nav-menu">
+                <a href="about.html" data-en="About" data-es="Nosotros">About</a>
+                <a href="services.html" data-en="Services" data-es="Servicios">Services</a>
+                <a href="projects.html" data-en="Projects" data-es="Proyectos">Projects</a>
+                <a href="contact.html" class="active" data-en="Contact" data-es="Contacto">Contact</a>
+            </nav>
+
+            <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation menu">
+                ☰
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Contact Page Title -->
+        <section class="page-title-section contact-title-section">
+            <div class="container page-title-content">
+                <p class="section-label" data-en="Contact JCCS Services" data-es="Contacte a JCCS Services">Contact JCCS Services</p>
+                <h1 data-en="Get in Touch" data-es="Contáctenos">Get in Touch</h1>
+            </div>
+        </section>
+
+        <!-- Contact Intro / Contact Cards -->
+        <section class="section contact-intro-section">
+            <div class="container contact-intro-grid">
+                <div class="contact-intro-text">
+                    <p class="section-label" data-en="Let’s Talk About Your Facility" data-es="Hablemos de su Instalación">Let’s Talk About Your Facility</p>
+                    <h2 data-en="Ready to discuss a renovation, preservation, repair, or commercial construction need?" data-es="¿Listo para hablar sobre una necesidad de renovación, preservación, reparación o construcción comercial?">Ready to discuss a renovation, preservation, repair, or commercial construction need?</h2>
+                    <p data-en="Send us your project details and a member of our team will follow up to understand the scope, location, schedule, and the level of support your facility needs." data-es="Envíenos los detalles de su proyecto y un miembro de nuestro equipo se comunicará para entender el alcance, la ubicación, el cronograma y el nivel de apoyo que su instalación necesita.">
+                        Send us your project details and a member of our team will follow up to understand the scope,
+                        location, schedule, and the level of support your facility needs.
+                    </p>
+                </div>
+
+                <div class="contact-cards">
+                    <article class="contact-person-card">
+                        <p class="section-label" data-en="General Inquiries" data-es="Consultas Generales">General Inquiries</p>
+                        <h3 data-en="Quotes & project questions" data-es="Cotizaciones y preguntas de proyectos">Quotes & project questions</h3>
+                        <p><strong data-en="Email:" data-es="Correo:">Email:</strong> <a href="mailto:estimates@jccs-services.com">estimates@jccs-services.com</a></p>
+                        <p data-en="Or send your project details with the quote form below." data-es="O envíe los detalles de su proyecto con el formulario de cotización.">Or send your project details with the quote form below.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form / Map -->
+        <section class="section contact-main-section">
+            <div class="container contact-main-grid">
+                <div class="contact-form-card" id="request-quote">
+                    <p class="section-label" data-en="Send a Message" data-es="Enviar Mensaje">Send a Message</p>
+                    <h2 data-en="Request a Quote" data-es="Solicitar Cotización">Request a Quote</h2>
+
+                    <form class="contact-form" id="quote-form" action="api/quote.php" method="post">
+                        <div class="form-trap" aria-hidden="true">
+                            <label for="website">Leave this field empty</label>
+                            <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+                        </div>
+                        <input type="hidden" name="started_at" value="">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name" data-en="Name" data-es="Nombre">Name</label>
+                                <input type="text" id="name" name="name" placeholder="Your name" maxlength="120" autocomplete="name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email" data-en="Email" data-es="Correo Electrónico">Email</label>
+                                <input type="email" id="email" name="email" placeholder="you@example.com" maxlength="200" autocomplete="email" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone" data-en="Phone Number" data-es="Número de Teléfono">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="(000) 000-0000" maxlength="40" autocomplete="tel">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="company" data-en="Company Name (if applicable)" data-es="Nombre de la Empresa (si aplica)">Company Name (if applicable)</label>
+                                <input type="text" id="company" name="company" placeholder="Company or organization" maxlength="160" autocomplete="organization">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" data-en="Message" data-es="Mensaje">Message</label>
+                            <textarea id="message" name="message" rows="7" maxlength="5000" placeholder="Tell us about your project, facility, timeline, and location." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" data-en="Send Request" data-es="Enviar Solicitud">Send Request</button>
+                        <p class="form-status" id="quote-status" role="status" aria-live="polite" hidden></p>
+                    </form>
+                </div>
+
+                <div class="contact-map-card service-area-card">
+                    <p class="section-label" data-en="Service Area" data-es="Área de Servicio">Service Area</p>
+                    <h2 data-en="Based in Greenville, serving the Upstate" data-es="Con sede en Greenville, sirviendo el Upstate">Based in Greenville, serving the Upstate</h2>
+                    <p data-en="We work on healthcare, commercial, and institutional facilities across Upstate South Carolina. Tell us where your facility is and we will confirm availability." data-es="Trabajamos en instalaciones de salud, comerciales e institucionales en todo el Upstate de Carolina del Sur. Díganos dónde está su instalación y confirmaremos disponibilidad.">We work on healthcare, commercial, and institutional facilities across Upstate South Carolina. Tell us where your facility is and we will confirm availability.</p>
+                    <ul class="area-list">
+                        <li>Greenville</li>
+                        <li>Spartanburg</li>
+                        <li>Anderson</li>
+                        <li>Greenwood</li>
+                        <li>Easley</li>
+                        <li>Seneca</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p data-en="© 2026 JCCS Services. All rights reserved." data-es="© 2026 JCCS Services. Todos los derechos reservados.">&copy; 2026 JCCS Services. All rights reserved.</p>
+            <p data-en="Preservation • Renovation • Construction" data-es="Preservación • Renovación • Construcción">Preservation • Renovation • Construction</p>
+        </div>
+    </footer>
+
+    <script>
+        const languageButtons = document.querySelectorAll('.language-btn');
+        const translatableElements = document.querySelectorAll('[data-en][data-es]');
+
+        function setLanguage(language) {
+            document.documentElement.lang = language;
+
+            translatableElements.forEach((element) => {
+                element.textContent = element.dataset[language];
+            });
+
+            languageButtons.forEach((button) => {
+                const isActive = button.dataset.lang === language;
+                button.classList.toggle('active', isActive);
+                button.style.background = isActive ? '#2563a6' : '#ffffff';
+            });
+
+            localStorage.setItem('jccs-language', language);
+        }
+
+        languageButtons.forEach((button) => {
+            button.addEventListener('click', () => setLanguage(button.dataset.lang));
+        });
+
+        setLanguage(localStorage.getItem('jccs-language') || 'en');
+
+    </script>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

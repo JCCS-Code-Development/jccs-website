@@ -1,0 +1,15 @@
+---
+deployment:
+  tasks:
+    # Company website → www.jccs-services.com (public_html root).
+    # Copies only the site's own files; never deletes, so the app folders
+    # (calendar, jccs-projects, jccs-fieldclock, ...) and /admin are untouched.
+    # Secrets stay in /home/vm3xrrup9tqw/secure_backups/website-config.php,
+    # which api/quote.php reads directly (it is not copied into public_html).
+    - export DEPLOYPATH=/home/vm3xrrup9tqw/public_html
+    - /bin/cp -f index.html about.html services.html projects.html contact.html $DEPLOYPATH/
+    - /bin/mkdir -p $DEPLOYPATH/css $DEPLOYPATH/js $DEPLOYPATH/imagenes $DEPLOYPATH/api
+    - /bin/cp -Rf css/. $DEPLOYPATH/css/
+    - /bin/cp -Rf js/. $DEPLOYPATH/js/
+    - /bin/cp -Rf imagenes/. $DEPLOYPATH/imagenes/
+    - /bin/cp -f api/quote.php api/.htaccess $DEPLOYPATH/api/
